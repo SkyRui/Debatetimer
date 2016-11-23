@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainView</class>
+ <widget class="QWidget" name="MainView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1173</width>
+    <height>737</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainView</string>
+  </property>
+  <widget class="QLabel" name="mainLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>551</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 48pt &quot;Adobe Arabic&quot;;</string>
+   </property>
+   <property name="text">
+    <string>辩论比赛开始</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="positiveSideButton">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>550</y>
+     <width>111</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>正方</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="negativeSideButton">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>550</y>
+     <width>111</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>反方</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="finishButton">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>690</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="nextButton">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>670</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>下一环节</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mainUILabel">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>180</y>
+     <width>171</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 70pt &quot;黑体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="positiveUILabel">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>420</y>
+     <width>117</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 48pt &quot;黑体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="negativeUILable">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>420</y>
+     <width>117</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 48pt &quot;黑体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nextLabel">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>710</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>正方立论</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="upButton">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>620</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>上一环节</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="stopButton">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>570</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>终止</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>finishButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainView</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>625</x>
+     <y>518</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>477</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
